@@ -1,0 +1,121 @@
+/* SMALL DEVICES */
+@media screen and (max-width: 650px) {
+  /* NAVBAR */
+  nav {
+    font-size: 15px !important;
+  }
+  nav .favorite {
+    font-size: 2rem !important;
+  }
+  /* STARTER */
+  .starter-container {
+    min-height: 20vh !important;
+  }
+  arter-container .carousel .carousel-caption {
+    padding: 2px;
+    width: 80%;
+    top: 0;
+    text-align: left;
+  }
+  .starter-container .carousel .carousel-inner img {
+    filter: opacity(40%);
+  }
+
+  .starter-container .carousel .carousel-inner .display-6 {
+    font-size: 12px;
+  }
+
+  .starter-container .carousel .carousel-inner a {
+    font-size: 8px;
+    padding: 4px;
+    border-radius: 4px;
+    text-align: center !important;
+  }
+
+  .starter-container .carousel .carousel-inner .lead {
+    font-size: 7px;
+    color: rgb(26, 26, 26);
+  }
+
+  /* STARTER FOOTER */
+
+  .starter-footer #aboutus .fs-1 {
+    font-size: 13px !important;
+  }
+
+  .starter-footer #aboutus .border-top {
+    border: none !important;
+    border: 1px solid #efefef;
+  }
+
+  .starter-footer #aboutus img {
+    height: 25px !important;
+    width: 25px !important;
+    padding: 0 !important;
+  }
+  .starter-footer #aboutus a {
+    padding: 5px;
+  }
+  .starter-footer #aboutus a span {
+    font-size: 10px;
+  }
+
+  .starter-footer #aboutus .about-message {
+    font-size: 13px;
+  }
+
+  /* RECIPES */
+  .recipes .row {
+    flex-direction: column-reverse !important;
+  }
+
+  .recipes .row .available-recipes .list-group .list-group-action {
+    font-size: 12px;
+  }
+
+  /* RECIPE DETAILS */
+  .recipe-details .food-img {
+    height: 20rem !important;
+  }
+
+  .recipe-details .food-img-wrapper:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 0%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(255, 138, 5, 0.233),
+      #ff63472b
+    );
+  }
+
+  .recipe-details .food-img-title {
+    top: 10px;
+    left: -30px;
+    width: 70% !important;
+    padding: 8px;
+    /* height: 20%; */
+    font-size: 16px;
+    font-family: Helvetica, sans-serif !important;
+    font-weight: bolder;
+    color: rgba(230, 230, 230, 0.822);
+    text-transform: uppercase;
+    margin-left: 20px;
+    transform: rotate(-10deg);
+  }
+
+  .recipe-details .ingredient-list {
+    font-size: 13px !important;
+  }
+
+  .recipes .row .recipe-card .card-title {
+    font-size: 17px !important;
+  }
+}
+/* MEDIUM DEVIVES */
+@media screen and (max-width: 450px) {
+}

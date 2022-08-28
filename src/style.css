@@ -1,0 +1,324 @@
+* {
+  font-family: quicksand;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+nav .nav-logo {
+  color: #ff9430 !important;
+  text-align: center;
+}
+
+nav .favorite {
+  font-size: 2rem;
+  color: #ff9430;
+  margin-left: 20px !important;
+}
+
+nav .fav-wrap span {
+  color: #ff6347 !important;
+}
+nav form .search-recipes {
+  padding: 8px !important;
+  font-size: 14px !important;
+  color: #fff !important;
+}
+/* STARTER */
+.starter-container {
+  min-height: 80vh !important;
+  width: 100% !important;
+  overflow: hidden;
+  background-position: top;
+}
+.starter-container .carousel .carousel-caption {
+  width: 40%;
+  top: 10px;
+  left: 0;
+}
+
+.starter-container .carousel .carousel-caption a,
+.recipes .row .recipe-card a,
+nav form .search-recipes {
+  border: 0;
+  outline: 0;
+  padding: 12px;
+  background: none;
+  font-size: 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    to bottom left,
+    rgba(254, 178, 0, 0.829),
+    #ff6347b6
+  );
+}
+
+.starter-container .carousel .carousel-inner img {
+  filter: opacity(50%);
+  object-fit: contain;
+}
+
+.starter-container .carousel .carousel-caption .display-6 {
+  color: #ff63478e;
+}
+
+/* STARTER FOOTER  */
+
+.starter-footer .contact-us {
+  background: #dc354602;
+}
+
+.starter-footer .about-us {
+  background: #ffc1070e;
+}
+
+/* RECIPES */
+
+.recipes {
+  min-height: 100vh;
+}
+
+.recipes .row .recipe-card .card-img {
+  max-width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  opacity: 70%;
+  transition: 0.4s;
+}
+
+.recipes .row .recipe-card .card-img:hover {
+  opacity: 100%;
+}
+
+.recipes .row .recipe-card .btn-cart {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: rgba(254, 178, 0, 0.687);
+  transition: 0.3s;
+}
+.recipes .row .recipe-card .btn-cart:hover {
+  color: #ff6347a0;
+}
+.recipes .row .recipe-card a {
+  font-size: 13px;
+  padding: 6px;
+  margin-top: 12px !important;
+}
+
+.recipes .row .recipe-card .btn-cart .cart-label {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.924);
+}
+.pinned {
+  background-image: linear-gradient(
+    to bottom left,
+    rgba(254, 178, 0, 0.829),
+    #ff6347b6
+  ) !important;
+  color: #fff;
+}
+
+.recipe-details {
+  min-height: 90vh;
+}
+
+.recipe-details .food-img-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.recipe-details .food-img-wrapper:after {
+  position: absolute;
+  content: "";
+  height: 96%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 138, 5, 0.233),
+    #ff63472b
+  );
+}
+
+.recipe-details .food-img {
+  height: 35rem !important;
+  width: 100% !important;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.recipe-details .food-img-title {
+  position: absolute;
+  top: 20px;
+  /* left: 20%; */
+  width: 100% !important;
+  padding: 15px;
+  font-size: 35px;
+  font-family: Helvetica, sans-serif !important;
+  font-weight: bolder;
+  color: #fff;
+  text-transform: uppercase;
+  width: 60%;
+  background-image: linear-gradient(
+    to bottom left,
+    rgba(254, 178, 0, 0.874),
+    #ff6347d7
+  );
+  /* transform: rotate(-10deg); */
+}
+
+.recipe-details .food-img-wrapper:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 138, 5, 0),
+    #ff634700
+  );
+}
+.recipe-details .recipe-details-ingredients {
+  /* height: 22rem; */
+}
+
+.recipe-details .ingredient-list .ing-item {
+  font-size: 13px;
+  width: 45% !important;
+}
+.recipe-details .ingredient-list .ing-item:before {
+  content: "";
+  min-width: 10px;
+  height: 30px;
+  background: #ff6347a8;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.recipe-details .info-title,
+.recipe-details-ingredients .ingredient-title {
+  color: #ff6447a8 !important;
+}
+.recipe-details .info {
+  padding: 10px;
+}
+
+/* OFFCANVAS */
+.offcanvas .offcanvas-title {
+  color: #ff6347b6 !important;
+}
+.offcanvas .cartItem-wrapper {
+  padding: 10px;
+}
+.offcanvas .cartItem-wrapper img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  opacity: 90%;
+  object-fit: cover;
+  padding: 2px;
+  border: 3px solid #ff63477c;
+  margin-right: 9px;
+}
+.offcanvas .cartItem-wrapper .title {
+  text-transform: uppercase;
+  color: #ff6347c1;
+  font-weight: bolder;
+}
+
+.offcanvas .cartItem-wrapper .publisher {
+  text-transform: uppercase;
+  color: rgba(75, 75, 75, 0.757);
+  font-size: 11px;
+  font-weight: bolder;
+}
+.offcanvas .cartItem-wrapper:hover .offcanvas .cartItem-wrapper img {
+  opacity: 100%;
+}
+.offcanvas hr {
+  color: #ff6347cf;
+}
+.offcanvas .cartItem-wrapper button {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #ff6347d3;
+}
+/* SKELETON LOADING ANIMATION */
+
+:root {
+  --loading-grey: #ededed;
+}
+.skeleton-card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.12);
+}
+
+.image {
+  height: 200px;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+
+.content {
+  padding: 2rem 1.8rem;
+}
+
+h4 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.loading .image,
+.loading h4,
+.loading .description {
+  background-color: var(--loading-grey);
+  background: linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0) 40%,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 60%
+    )
+    var(--loading-grey);
+  background-size: 200% 100%;
+  background-position-x: 180%;
+  animation: 1s loading ease-in-out infinite;
+}
+
+@keyframes loading {
+  to {
+    background-position-x: -20%;
+  }
+}
+
+.loading h4 {
+  min-height: 1.6rem;
+  border-radius: 4px;
+  animation-delay: 0.05s;
+}
+
+.loading .description {
+  min-height: 4rem;
+  border-radius: 4px;
+  animation-delay: 0.06s;
+}
